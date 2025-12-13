@@ -60,14 +60,14 @@ It uses **RAG (Retrieval Augmented Generation)** with **Pinecone + LangChain** t
 - Tailwind CSS
 
 ### **AI & Vector Storage**
-- OpenAI / Gemini
+- Gemini
 - LangChain
 - Pinecone
 
 ### **Authentication**
 - Clerk
 
-### **Payments**
+#### **Payments**
 - Stripe Billing
 
 ### **Storage / Parsing**
@@ -93,7 +93,7 @@ Implementation → `lib/langchain.ts`
 ---
 
 ## 📂 Project Structure
-
+```bash
 
 chat-to-pdf/
 │
@@ -145,19 +145,23 @@ chat-to-pdf/
 │   └── pdf.worker.min.js
 │
 └── README.md
-
-## 🔧 Setup Instructions
+```
+ ---
+### 🔧 Setup Instructions
 1️⃣ Clone the repository
+```bash 
 git clone https://github.com/sourav-kr14/Chat-To-PDF
 cd chat-to-pdf
+```
 
 2️⃣ Install dependencies
+```bash
 npm install
+```
 
 3️⃣ Add environment variables
-
+```bash
 Create .env.local:
-
 OPENAI_API_KEY=your_key
 PINECONE_API_KEY=your_key
 PINECONE_ENVIRONMENT=your_env
@@ -167,11 +171,14 @@ CLERK_SECRET_KEY=your_key
 STRIPE_SECRET_KEY=your_key
 STRIPE_WEBHOOK_SECRET=your_key
 NEXT_PUBLIC_APP_URL=http://localhost:3000
-
+```
 4️⃣ Run development server
+```bash
 npm run dev
-
-## 🧠 How It Works (RAG Pipeline)
+```
+ ---
+ 
+### 🧠 How It Works (RAG Pipeline)
 - User uploads a PDF
 - PDF pages are extracted
 - Text is chunked (LangChain)
@@ -183,11 +190,11 @@ When user asks a question →
 - ✔ AI answers using only those chunks
 
 This prevents hallucination and gives accurate document-based answers.
-
-## 📄 License – MIT
+ ---
+ 
+### 📄 License – MIT
 - This project is licensed under the MIT License.
-
-
-## 💬 Author
+ ---
+### 💬 Author
 **Sourav Kumar**  
 GitHub: https://github.com/sourav-kr14
