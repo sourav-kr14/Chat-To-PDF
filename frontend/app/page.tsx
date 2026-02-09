@@ -77,7 +77,7 @@ export default function Home() {
             </p>
           </div>
           <Button asChild className="mt-10">
-            <Link href="/dashboard">Get Started </Link>
+            <Link href="/sign-in">Get Started </Link>
           </Button>
         </div>
         <div className="relative overflow-hidden pt-16">
@@ -85,7 +85,7 @@ export default function Home() {
             {/* <Image></Image> */}
             <Image
               alt="App Screenshot"
-              src="/images/homepage.png" // ✅ Starts with a forward slash
+              src="/images/homepage.png" 
               width={2432}
               height={1442}
               className="mb-[-0%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
